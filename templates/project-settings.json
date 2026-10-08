@@ -1,0 +1,13 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": false,
+    "allowUnsandboxedCommands": false,
+    "filesystem": {
+      "denyRead": ["**/.env", "**/.env.*", "**/*.pem", "**/*.key", "**/*credentials*"]
+    },
+    "network": {
+      "allowedDomains": ["registry.npmjs.org", "pypi.org", "files.pythonhosted.org", "github.com", "*.githubusercontent.com"]
+    }
+  }
+}
